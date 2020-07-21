@@ -1,0 +1,1655 @@
+h1. CHANGELOG
+
+h3. 3.1.36 September 23, 2018
+
+* add rails-shortcut-app contributed application
+
+h3. 3.1.35 May 16, 2018
+
+* option to remove Rails Turbolinks for Rails 5
+* improve rails-signup-thankyou contributed application (no TurboLinks, drop mailing list)
+
+h3. 3.1.34 May 14, 2018
+
+* add rails-signup-thankyou contributed application
+
+h3. 3.1.33 February 21, 2018
+
+* remove 'rails_stripe_membership_saas' option from example applications (no longer supported)
+
+h3. 3.1.32 February 9, 2018
+
+* Bootstrap 4 was released Jan 18, 2018 so no need to specify '~> 4.0.0.alpha6'
+* no need to warn about SimpleForm being incompatible with Rails 5.1
+
+h3. 3.1.31 February 9, 2018
+
+* for Rails 5.2 and newer, create 'config/secrets.yml' file whether or not the secrets preference is set
+* use 'pg' gem version 0.18 for Rails 5.1.4 and older (fixes https://github.com/RailsApps/rails_apps_composer/issues/368)
+
+h3. 3.1.30 January 19, 2018
+
+* for Rails 5.2 and newer, create 'config/secrets.yml' file if the secrets preference is set
+
+h3. 3.1.29 November 26, 2017
+
+* factory_girl_rails gem is now named factory_bot_rails
+
+h3. 3.1.28 November 20, 2017
+
+* fix uninitialized constant error for Tempfile (thanks @shaoyangyu!)
+* changed call to 'confirm!' to 'confirm' in recipes/init.rb to fix the Devise confirmable module (thanks @tomelam!)
+
+h3. 3.1.27 May 17, 2017
+
+* remove gem 'capybara' for Rails 5.1 (already included in Rails 5.1)
+* remove gem 'selenium-webdriver' for Rails 5.1 (already included in Rails 5.1)
+* update gem 'bootstrap' to 4.0.0.alpha6
+
+h3. 3.1.26 May 15, 2017
+
+* restore support for Rails 5.0 for learn-rails application
+
+h3. 3.1.25 May 15, 2017
+
+* add jQuery option via gem or yarn (because Rails 5.1 drops jQuery and Bootstrap needs it)
+* remove 'minitest-rails-capybara' gem from learn-rails recipe (not needed for Rails 5.1)
+
+h3. 3.1.24 May 7, 2017
+
+* 'secrets.yml' file in Rails 5 contains string 'production:' twice
+
+h3. 3.1.23 May 7, 2017
+
+* SimpleForm is incompatible with Rails 5.1
+* 'learn-rails' application no longer uses SimpleForm
+
+h3. 3.1.22 April 27, 2017
+
+* announce Kickstarter campaign
+
+h3. 3.1.21 November 23, 2016
+
+* accommodate Rails 5.0.1 (fixes https://github.com/RailsApps/rails-composer/issues/261)
+
+h3. 3.1.20 November 23, 2016
+
+* generate 'administrate:install' at stage four
+
+h3. 3.1.19 November 22, 2016
+
+* add gem 'bourbon' for the administrate option
+
+h3. 3.1.18 October 30, 2016
+
+* Segment.io now named Segment.com
+* Upmin Admin is no longer actively maintained
+
+h3. 3.1.17 October 30, 2016
+
+* no need for app.json file when 'Deploy to Heroku' button is gone
+
+h3. 3.1.16 October 30, 2016
+
+* add minitest gem to learn-rails recipe
+* no need to precompile assets for Heroku with Rails 5
+* I doubt that anyone uses the 'Deploy to Heroku' button
+* add 'rvmrc' preference for .ruby-gemset and .ruby-version files
+
+h3. 3.1.15 October 30, 2016
+
+* no Bootstrap page templates needed for learn-rails recipe (fix)
+
+h3. 3.1.14 October 29, 2016
+
+* remove rails_12factor gem not needed for Rails 5
+* make Puma web server default for Rails 5 (not Webrick)
+* no Bootstrap page templates needed for learn-rails recipe
+* add tests to learn-rails recipe
+* create db/schema.rb file for learn-rails recipe
+
+h3. 3.1.13 October 29, 2016
+
+* use bootstrap3 not foundation for learn-rails recipe
+* add test helper for learn-rails recipe
+
+h3. 3.1.12 October 29, 2016
+
+* sendgrid gem not needed for mail
+
+h3. 3.1.12 October 29, 2016
+
+* released prematurely
+
+h3. 3.1.10 September 5, 2016
+
+* add Bootstrap 4 option
+
+h3. 3.1.9 August 3, 2016
+
+* remove 'quiet_assets' gem (deprecated for Rails 5.0, see https://github.com/evrone/quiet_assets#deprecation)
+* use published 'high_voltage' gem (not from GitHub master)
+
+h3. 3.1.8 May 29, 2016
+
+* remove WEBrick option (Puma is default for Rails 5)
+* remove Figaro as an option (closes rails-composer issue #209)
+* remove option to create an RVM gemset
+
+h3. 3.1.7 February 29, 2016
+
+* 'learn-rails' application now uses SendGrid not Mandrill
+
+h3. 3.1.6 February 7, 2016
+
+* use 'high_voltage' gem from GitHub master with Rails 5.0
+* handle existing README.md file in Rails 5.0
+
+h3. 3.1.5 January 30, 2016
+
+* don't use 'foundation-rails' gem version 6 for Foundation 5
+* 'learn-rails' application now uses Mandrill not Gmail
+
+h3. 3.1.4 December 19, 2015
+
+* preliminary support for Rails 5.0.0.beta1
+
+h3. 3.1.3 November 23, 2015
+
+* improve format of file 'config/railscomposer.yml' containing configuration settings
+
+h3. 3.1.2 November 23, 2015
+
+* include gem 'administrate' from the good folks at thoughtbot
+
+h3. 3.1.1 November 6, 2015
+
+* include gem 'high_voltage' so Bootstrap templates will work with all example apps
+* move auth links to a new partial to accommodate Bootstrap templates
+* update pitch for support
+
+h3. 3.1.0 October 31, 2015
+
+* added a 'stage four' sequence to accommodate Bootstrap page layouts
+* added Bootstrap page layouts using the rails_apps_pages gem
+* removed a redundant 'bundle install' step
+* fix issue #349 typo in conditional
+* version number not needed for Figaro gem
+
+h3. 3.0.44 October 26, 2015
+
+* merged pull requests from jsyeo, neydroid, mli, vfonic
+
+h3. 3.0.43 October 19, 2015
+
+* downgrade mysql2 gem due to Rails issue https://github.com/rails/rails/issues/21544
+
+h3. 3.0.42 June 7, 2015
+
+* update 'learn-rails' recipe for application version 2.2.0
+* correct Foreman .env OmniAuth configuration in 'init' recipe (closes #335)
+
+h3. 3.0.41 May 31, 2015
+
+* remove 'ENV.fetch' and restore 'ENV' to avoid errors during 'rake db:migrate'
+
+h3. 3.0.40 May 10, 2015
+
+* add a temporary file 'config/railscomposer.yml' with configuration settings
+
+h3. 3.0.39 April 28, 2015
+
+* use 'ENV.fetch' instead of 'ENV' to reveal configuration issues
+* fix a documentation URL
+* fix missing backslashes in a regex expression
+
+h3. 3.0.38 April 27, 2015
+
+* accommodate Haml and Slim when disabling Turbolinks
+
+h3. 3.0.37 April 24, 2015
+
+* option to remove Rails Turbolinks
+* disable Turbolinks for 'rails-stripe-membership-saas' example application
+
+h3. 3.0.36 April 23, 2015
+
+* install bundler gem (because it is no longer automatically installed by RVM)
+
+h3. 3.0.35 April 16, 2015
+
+* fix error with Haml::HTML (contributed by Matthew Orahood)
+
+h3. 3.0.34 April 15, 2015
+
+* add 'rails-stripe-membership-saas' example application
+
+h3. 3.0.33 February 4, 2015
+
+* add 'rails-stripe-coupons' example application
+
+h3. 3.0.32 December 29, 2014
+
+* 'learn-rails' recipe no longer needs gems 'activerecord-tableless' or 'thin'
+
+h3. 3.0.31 December 29, 2014
+
+* set 'rubocop' option to false for RailsApps example apps
+
+h3. 3.0.30 December 29, 2014
+
+* suggest upgrade to Rails 4.2 for Rails 4.1 users
+
+h3. 3.0.29 December 9, 2014
+
+* improve 'extras' recipe to add 'rubocop' option (contributed by Jason Yeo)
+* remove sdoc for Rails 4.2 (contributed by Jason Yeo)
+* improved assignment of prefs[:prod_webserver] (contributed by Jose Ney Guerrero)
+* substitute backtick for a single quote in 'readme' recipe (contributed by DamirSvrtan)
+
+h3. 3.0.28 November 19, 2014
+
+* add 'spring-commands-rspec' gem for testing (contributed by Carlos Eduardo Rodrigues Diógenes)
+* fix for 'locale' recipe (contributed by Carlos Eduardo Rodrigues Diógenes)
+* add 'rails-stripe-checkout' example application
+
+h3. 3.0.27 November 9, 2014
+
+* add mailing list to rails-signup-download example application
+
+h3. 3.0.26 October 27, 2014
+
+* rename 'rails_mailinglist_signup' to ''rails_mailinglist_activejob'
+
+h3. 3.0.25 October 18, 2014
+
+* add options to 'rails_bootstrap' and 'rails_foundation' recipes to allow choice of database and SimpleForm
+
+h3. 3.0.24 October 17, 2014
+
+* restore 'rails_mailinglist_signup' example app for Rails 4.2
+* no need to specify GitHub source for Devise gem for Rails 4.2
+
+h3. 3.0.23 October 1, 2014
+
+* fix handling of optional hostname for PostgreSQL (closes #314)
+* fix 'deployment' recipe to accommodate Heroku and PostgreSQL
+
+h3. 3.0.22 September 28, 2014
+
+* issue resolved, no need to specify 'foundation-rails' gem version
+
+h3. 3.0.21 September 25, 2014
+
+* no need to change the 'config/database.yml' file for Heroku
+
+h3. 3.0.20 September 24, 2014
+
+* specify 'foundation-rails' gem version for https://github.com/zurb/foundation/issues/5811
+
+h3. 3.0.19 September 24, 2014
+
+* accommodate new version of Figaro gem (closes #319)
+* improve generation of 'app.json' file for Heroku Button deployment
+
+h3. 3.0.18 September 22, 2014
+
+* add Heroku option to 'deployment' recipe
+* removed 'default' database preference and replaced with 'sqlite'
+* remove 'Gemfile.lock' and run 'bundle install' in final stage
+
+h3. 3.0.17 September 16, 2014
+
+* fix for Procfile create or update (contributed by Dima Lunich)
+
+h3. 3.0.16 September 14, 2014
+
+* add Upmin option for an admin interface
+
+h3. 3.0.15 September 8, 2014
+
+* accommodate Devise for Rails 4.2.0.beta1
+
+h3. 3.0.14 August 31, 2014
+
+* use role-based authorization for 'rails-signup-download' app
+
+h3. 3.0.13 August 27, 2014
+
+* add 'rails-devise-roles' example application
+* add 'Simple role-based' authorization option
+
+h3. 3.0.12 August 26, 2014
+
+* add 'faker' gem to development environment when RSpec is selected (contributed by ailnlv)
+* remove 'rails_mailinglist_signup' example app from menu pending release of Rails 4.2
+* specify no analytics for 'learn-rails' example app
+
+h3. 3.0.11 August 3, 2014
+
+* fix tests when Devise is selected without user pages (contributed by mengqing)
+* fix tests when Devise and Pundit are selected with Devise Confirmable (contributed by mengqing)
+
+h3. 3.0.10 July 13, 2014
+
+* improve diagnostics in README (fixes #304)
+* run 'deployment' recipe before 'extras' recipe
+* don't run 'rvm gemset list' in 'extras' recipe
+* change highlighting of prompts
+* add 'analytics' recipe for Segment.io and Google Analytics
+
+h3. 3.0.9 July 8, 2014
+
+* generate pages in stage two (fix for rails-signup-download recipe)
+
+h3. 3.0.8 July 7, 2014
+
+* allow Pundit option when no authentication is chosen (fixes #310)
+* specify GitHub repo for ActiveAdmin (contributed by Christopher Haupt)
+
+h3. 3.0.7 July 5, 2014
+
+* option to join the Rails Composer mailing list
+
+h3. 3.0.6 July 2, 2014
+
+* fix generation of routes for OmniAuth
+
+h3. 3.0.5 June 30, 2014
+
+* add rails-mailinglist-signup example application
+
+h3. 3.0.4 June 29, 2014
+
+* improve tests for Devise confirmable
+* fix email settings for Sendgrid and Mandrill (fixes #302)
+* raise error with versions older than Rails 4.1
+
+h3. 3.0.3 June 26, 2014
+
+* revert 'omniauth' recipe (make the change in rails_apps_pages instead)
+
+h3. 3.0.2 June 26, 2014
+
+* fix routes error in 'omniauth' recipe
+
+h3. 3.0.1 June 26, 2014
+
+* add 'locale' recipe (contributed by hedgesky)
+* restore devise_invitable option
+* remove 'capture email' feature from 'omniauth' recipe
+
+h3. 3.0.0 June 20, 2014
+
+* rename 'after_everything' as 'stage_three'
+* rename 'after_bundler' as 'stage_two'
+* rename 'tests4' recipe to 'tests'
+* no longer supporting Rails 4.0 and earlier, remove Rails 4.1 logic
+* remove code for CanCan
+* support Pundit for authorization with OmniAuth
+* add 'pages' recipe
+* remove 'starter_app' option (replaced by 'pages' recipe)
+* replace recipes 'model, view, controller' with recipes 'devise, omniauth, pundit'
+* remove 'testing' recipe (partly replaced by 'tests4' recipe)
+* remove options for Rails 3.2 example applications
+* remove MongoDB option from database choices
+* remove Mongoid-specific code
+
+h3. 2.6.13 June 14, 2014
+
+* generate RSpec tests for Pundit with the rails_apps_testing gem
+
+h3. 2.6.12 June 6, 2014
+
+* generate RSpec tests for OmniAuth with the rails_apps_testing gem
+* Devise tests now generated by the rails_apps_testing gem
+
+h3. 2.6.11 June 3, 2014
+
+* for Devise, modify 'config/initializers/filter_parameter_logging.rb' file only for Rails 4.1
+* update RSpec version for RSpec 3.0.0 final release
+
+h3. 2.6.10 May 31, 2014
+
+* revise 'rails-omniauth' recipe
+
+h3. 2.6.9 May 29, 2014
+
+* for custom application option with Devise, fixes https://github.com/RailsApps/rails-composer/issues/178
+* for Devise, need 'domain_name' even without the email option (contributed by Jimmy Zhang)
+* improve menu when 'Contributed applications' is selected
+
+h3. 2.6.8 May 26, 2014
+
+* for Devise, add 'domain_name' to 'secrets.yml' file for tests
+
+h3. 2.6.7 May 26, 2014
+
+* for Devise, set 'config.mailer_sender' in 'config/initializers/devise.rb' file
+* for Devise, add 'password_confirmation' to 'config/initializers/filter_parameter_logging.rb' file
+* add tests for 'rails-signup-download' app
+
+h3. 2.6.6 May 11, 2014
+
+* change prompts for selection menu
+
+h3. 2.6.5 May 10, 2014
+
+* in 'models' recipe, need to run 'rake db:migrate' immediately after adding migrations
+
+h3. 2.6.4 May 6, 2014
+
+* in 'extras' recipe, remove gems used to assist rails_apps_composer
+
+h3. 2.6.3 May 4, 2014
+
+* no need to set app name in 'config/routes.rb' file for Rails 4.1
+
+h3. 2.6.2 May 4, 2014
+
+* don't include 'domain_name' in 'secrets.yml' file unless email option is selected
+* remove temporary rails_apps_pages gem during cleanup phase
+
+h3. 2.6.1 May 4, 2014
+
+* fix error introduced by 'secrets' preference setting
+* remove warning about incompatible recipes; add a welcome banner
+
+h3. 2.6.0 May 4, 2014
+
+* no need to set app name in 'config/routes.rb' file for Rails 4.1
+* set preferences array of secrets for 'learn-rails' app
+* add 'rails-signup-download' example application
+* create individual recipes for example apps (and remove 'apps4' recipe)
+* use 'rails_apps_pages' gem to set up controllers, views, and routing for example apps
+* fix 'domain_name' environment variable in 'secrets.yml' file
+
+h3. 2.5.1 April 26, 2014
+
+* use 'rails_apps_testing' gem to configure RSpec and friends in 'tests4' recipe
+* install 'binding_of_caller' gem properly for various Ruby versions
+
+h3. 2.5.0 April 22, 2014
+
+* add 'tests4' recipe for simplified setup of test framework
+* remove devise_invitable option (pending fix of https://github.com/scambra/devise_invitable/issues/447)
+* remove Mongoid as an option for Rails 4.1 (pending further community support)
+
+h3. 2.4.44 April 12, 2014
+
+* use 'example.com' for domain_name in secrets.yml file
+* fix for rails-omniauth secrets.yml file
+* fix email recipe to restore correct behavior for 'none' option
+
+h3. 2.4.43 April 12, 2014
+
+* add pry as an option (contributed by Stefan Wienert)
+* add recipe for deployment with Capistrano (contributed by Stefan Wienert)
+
+h3. 2.4.42 April 11, 2014
+
+* add 'domain_name' to 'config/secrets.yml' file
+
+h3. 2.4.41 April 11, 2014
+
+* updates for Rails 4.1.0 final
+* fix for retrieving postgres host value in prefs (contributed by Atsushi Hamtaro Ishida)
+
+h3. 2.4.40 April 4, 2014
+
+* add MRI 2.1 to platforms for binding_of_caller gem (contributed by Chad Ingram)
+
+h3. 2.4.39 April 3, 2014
+
+* update 'megatest' feature to Rails 4.1 and Ruby 2.1 (contributed by Mark D. Blackwell)
+
+h3. 2.4.38 March 7, 2014
+
+* support option for 'Devise confirmable' with Rails 4.1 and Pundit (fixes #287)
+* send emails in development mode (reverts #272)
+
+h3. 2.4.37 March 6, 2014
+
+* no need to specify foundation-rails version (foundation-rails 5.2.0.0 fixes #281)
+
+h3. 2.4.36 March 2, 2014
+
+* fix error when 'SMTP' is selected as an email option (fixes #286)
+
+h3. 2.4.35 March 1, 2014
+
+* update 'rails-bootstrap' example application for Rails 4.1
+
+h3. 2.4.34 March 1, 2014
+
+* update 'rails-foundation' example application for Rails 4.1
+
+h3. 2.4.33 February 27, 2014
+
+* add 'rails-devise-pundit' example application to 'apps4' recipe
+
+h3. 2.4.32 February 26, 2014
+
+* update 'rails-omniauth' example application for Rails 4.1
+* skip helpers and assets when generating a controller
+
+h3. 2.4.31 February 24, 2014
+
+* generate Devise registration forms after database migrations are complete
+
+h3. 2.4.30 February 24, 2014
+
+* change prompts
+
+h3. 2.4.29 February 24, 2014
+
+* update 'rails-devise' example application for Rails 4.1
+* for Rails 4.1, use the Figaro master pending next release of Figaro (fixes #280)
+* remove 'rake db:test:prepare' (deprecated)
+
+h3. 2.4.28 February 20, 2014
+
+* issue #282 resolved, newest Devise release supports Rails 4.1
+
+h3. 2.4.27 February 19, 2014
+
+* for Rails 4.1, use Devise master pending next release of Devise (see issue #282)
+* specify 'foundation-rails 5.0.3.1' pending resolution of issue #281
+
+h3. 2.4.26 February 18, 2014
+
+* don't install the Figaro gem under Rails 4.1
+
+h3. 2.4.25 February 13, 2014
+
+* add support for Phusion Passenger
+* add 'rails-omniauth' example application to 'apps4' recipe
+* set email ports to 587 instead of 25 (contributed by mazlix)
+
+h3. 2.4.24 February 1, 2014
+
+* fix issue with mongoid-rspec version
+* fix Rolify generator
+* use Markdown for README (contributed by Steve Schwartz)
+
+h3. 2.4.23 January 30, 2014
+
+* don't send emails in development mode (contributed by Steve Schwartz)
+* new recipe 'email_dev' for mailcatcher and mail_view (contributed by Steve Schwartz)
+* fixes for 'activeadmin' recipe (contributed by Steve Schwartz)
+* add Foreman procfile (contributed by Steve Schwartz)
+* use 'foreman run' to get ENV variables if Foreman is selected (contributed by Steve Schwartz)
+* change display of recipes and preferences in README (contributed by Steve Schwartz)
+
+h3. 2.4.22 January 28, 2014
+
+* new recipe for 'activeadmin' or 'rails_admin' (contributed by Steve Schwartz)
+* added 'foreman' as alternative to Figaro gem (contributed by Steve Schwartz)
+* added postgres host config prompt (contributed by Steve Schwartz)
+
+h3. 2.4.21 January 11, 2014
+
+* add 'rails-devise' example application to 'apps4' recipe
+* remove custom 'name' field from 'rails-devise' example application
+
+h3. 2.4.20 January 9, 2014
+
+* use 'rails_layout' gem to generate Devise views with CSS styling for Foundation or Bootstrap
+* change commands to use 'rails_layout' gem version 1.0.0
+
+h3. 2.4.19 January 5, 2014
+
+* add 'rails-devise' example application
+* add 'rails-foundation' example application
+
+h3. 2.4.18 December 28, 2013
+
+* fix for mongoid gem
+* added 'createdb' flag to user creation for PostgreSQL (contributed by Tristan Lohman)
+* update Mandrill API key to match Heroku style (contributed by Stephan Meyers)
+* add 'unicorn-rails' gem (suggested by rceee)
+
+h3. 2.4.17 December 15, 2013
+
+* allow choice of front-end framework when building 'learn-rails' example
+* use 'slim-rails' gem
+* remove temporary Haml gems from Gemfile when Slim is selected
+
+h3. 2.4.16 December 11, 2013
+
+* update 'rails-bootstrap' example application to use Bootstrap 3.0
+
+h3. 2.4.15 December 8, 2013
+
+* use Zurb Foundation 4 for 'learn-rails' example application
+* gem 'compass-rails' 2.0.alpha.0 was yanked, use version 1.1.2
+
+h3. 2.4.14 November 22, 2013
+
+* support Zurb Foundation 5
+
+h3. 2.4.13 November 14, 2013
+
+* use the 'rails_layout' gem to generate navigation links
+* remove .gitignore and .gitkeep files unless git recipe is chosen (contributed by Mike Połtyn)
+* option to load defaults via HTTP instead of file (contributed by Arnaud Sellenet)
+* don't copy the user model from the rails3-mongoid-devise repo (contributed by Arnaud Sellenet)
+
+h3. 2.4.12 November 2, 2013
+
+* use the 'rails_layout' gem to set up a front-end framework
+* drop option to use LESS with Twitter Bootstrap (offer Sass version only)
+* 'learn-rails' app uses Zurb Foundation 4.0 instead of Twitter Bootstrap 2.3
+* upgrade 'simple_form' gem to '3.0.0'
+* remove 'bundle_path' preference used with 'bundle install' (https://github.com/RailsApps/rails-composer/issues/138)
+
+h3. 2.4.11 September 19, 2013
+
+* use rails_layout gem to set up layout files for Twitter Bootstrap 2.3
+
+h3. 2.4.10 September 16, 2013
+
+* revert to use Bootstrap 2.3 until SimpleForm supports Bootstrap 3
+
+h3. 2.4.9 September 15, 2013
+
+* use Bootstrap 3 when Rails 4.0 is used; for Rails 3.2 use Bootstrap 2.3
+* add preference to specify ph/mysql user/password (contributed by Vitaly Kushner)
+* add preference to skip db:seed (contributed by Vitaly Kushner)
+
+h3. 2.4.8 August 26, 2013
+
+* fix syntax error in 'gems' recipe
+
+h3. 2.4.7 August 26, 2013
+
+* fix Compass for using Foundation on Rails 4 (contributed by Mathias)
+* eliminate Devise Invitable module as an option for Rails 4 (closes #243)
+* improve prompt when asking for permission to drop existing databases
+* only generate Cucumber steps using 'email_spec' when Cucumber is selected (closes #234)
+* adjust routes when OmniAuth authentication is used with Rails 4 (https://github.com/RailsApps/rails-composer/issues/111)
+
+h3. 2.4.6 August 25, 2013
+
+* workaround for mongoid with Rails 4 (contributed by Rodrigo Russo)
+* lock gem 'database_cleaner' at 1.0.1 (https://github.com/bmabey/database_cleaner/issues/224)
+* add 'megatest' feature (contributed by Mark D. Blackwell)
+
+h3. 2.4.5 July 27, 2013
+
+* accommodate strong parameters in Rails 4 with Devise
+
+h3. 2.4.4 July 24, 2013
+
+* improve fix for CanCan 'seeds.rb' file for Rails 4.0
+* add 'google_drive' gem to 'learn-rails' example application
+* remove 'protected_attributes' gem for Rails 4.0
+* remove requirement for 'libv8' gem when using 'therubyracer' (contributed by Nicola Lorusso)
+* don't specify assets gem group if using Rails 4 (contributed by jconley88)
+* don't add attr_accessible for Devise in Rails 4 (contributed by jconley88)
+* refactored Rails 4 check into helper method (contributed by jconley88)
+* specify MIT license in the gemspec (closes issue #228)
+
+h3. 2.4.3 July 11, 2013
+
+* fix specs to replace deprecated stub! and mock
+
+h3. 2.4.2 July 11, 2013
+
+* add 'rails-bootstrap' example application to the 'apps4' recipe
+* remove creation of 'generators.rb' file (it was never used) from 'layout.erb'
+* remove 'sdoc' gem from Rails 4 generated Gemfile
+* modify 'email' recipe for Rails 4
+
+h3. 2.4.1 June 25, 2013
+
+* add 'protected_attributes' gem for Rails 4.0 (contributed by Vasily Ponomarev)
+* fix Devise 'routes.rb' file for Rails 4.0 (contributed by Vasily Ponomarev)
+* fix CanCan 'seeds.rb' file for Rails 4.0 (contributed by Vasily Ponomarev)
+* add gem paths reload command to fix 'html2haml' requirement (contributed by Vasily Ponomarev)
+* upgrade 'simple_form' gem to '3.0.0.rc' for Rails 4.0 (contributed by Vasily Ponomarev)
+
+h3. 2.4.0 June 24, 2013
+
+* preliminary menus for Rails 4.0
+* add 'apps4' recipe with 'learn-rails' example application
+* remove 'simple-test' example application
+* add the Ruby version to the Gemfile
+
+h3. 2.3.2 June 24, 2013
+
+* attempt to resolve issue #148 and #220 (failures caused by conflicting gem versions)
+
+h3. 2.3.1 June 22, 2013
+
+* add 'simple-test' example application to diagnose issue #220
+
+h3. 2.3.0 June 22, 2013
+
+* allow Rails 4.0, warn to check for GitHub issues
+* don't specify gem versions (Bundler manages updates)
+* assign gems to groups in Gemfile (contributed by R2dR)
+* add source signposts to generated templates (contributed by Mark D. Blackwell)
+
+h3. 2.2.42 June 20, 2013
+
+* fix prod_webserver handling (contributed by Vitaly Kushner)
+* update recipe for rails-prelaunch-signup app (only require capybara-webkit in test)
+* update recipe for rails-prelaunch-signup app (replace selenium with capybara-webkit)
+
+h3. 2.2.41 May 23, 2013
+
+* update recipe for rails-prelaunch-signup app (add selenium-webdriver gem)
+
+h3. 2.2.40 April 19, 2013
+
+* update recipe for rails-prelaunch-signup app
+
+h3. 2.2.39 April 2, 2013
+
+* support for continuous testing using Guard (contributed by Paavo Leinonen)
+
+h3. 2.2.38 March 29, 2013
+
+* in 'extras' recipe, use .ruby-version and .ruby-gemset instead of .rvmrc file
+
+h3. 2.2.37 March 26, 2013
+
+* accommodate old Ruby syntax in 'gems' recipe
+* fix 'gems' recipe to provide 'pg' or 'mysql2' gems if requested
+* update gem 'pg' to 0.15.0
+* update gem 'capybara' to 2.0.3
+* update gem 'zurb-foundation' to 4.0.9
+
+h3. 2.2.36 March 17, 2013
+
+* in 'extras' recipe, set correct Ruby version in .rvmrc file
+
+h3. 2.2.35 March 17, 2013
+
+* in 'extras' recipe, allow rvmrc option to be set in default file (contributed by Alex Takitani)
+* update 'gems' recipe to accommodate Ruby 2.0.0
+* update gem 'bootstrap-sass' to 2.3.1.0
+* update gem 'cucumber-rails' to 1.3.1
+* update gem 'zurb-foundation' to 4.0.8
+* update gem 'figaro' to 0.6.3
+* update gem 'better_errors' to 0.7.2
+* update gem 'database_cleaner' to 1.0.0.RC1
+* update gem 'mongoid-rspec' to 1.7.0
+* update gem 'simple_form' to 2.1.0
+* update gem 'httpclient' to 2.3.3
+* update gem 'mongoid' to 3.1.2
+* update gem 'google_visualr' to 2.1.7
+* update gem 'quiet_assets' to 1.0.2
+* update gem 'stripe' to 1.7.11
+* update gem 'cancan' to 1.6.9
+* update gem 'countries' to 0.9.2
+
+h3. 2.2.34 February 20, 2013
+
+* in 'extras' recipe, don't ask about adding .rvmrc file if it already exists
+* don't install 'binding_of_caller' gem in non-MRI/Rubinius Ruby implementations (contributed by dalton)
+* update gem 'mongoid' to 3.1.1
+* update gem 'twitter-bootstrap-rails' to 2.2.4
+* update gem 'binding_of_caller' to 0.7.1
+* update gem 'html2haml' to 1.0.1
+* minor fix to 'init' recipe
+
+h3. 2.2.33 February 16, 2013
+
+* fix color for question prompt (https://github.com/RailsApps/rails_apps_composer/issues/161)
+* fix inconsistent use of EOF newline (https://github.com/RailsApps/rails_apps_composer/issues/160)
+* fix when application.yml is not selected (https://github.com/RailsApps/rails_apps_composer/issues/159)
+
+h3. 2.2.32 February 14, 2013
+
+* add gem 'html2haml' version 1.0.0
+* update gem 'haml-rails' to 0.4
+* update gem 'slim' to 2.0.0.pre.6
+* update gem 'bootstrap-sass' to 2.3.0.0
+* update gem 'twitter-bootstrap-rails' to 2.2.3
+* update gem 'omniauth' to 1.1.3
+* update gem 'binding_of_caller' to 0.6.9
+* update gem 'better_errors' to 0.6.0
+* update gem 'mongoid' to 3.1.0
+* update gem 'minitest-spec-rails' to 4.3.8
+* update gem 'launchy' to 2.2.0
+* update gem 'recurly' to 2.1.8
+* update gem 'stripe' to 1.7.10
+
+h3. 2.2.31 January 30, 2013
+
+* fix 'testing' recipe to accommodate change from 'factory_girl_rails' 4.1.0 to 4.2.0
+* update gem 'factory_girl_rails' to 4.2.0
+* update gem 'devise' to 2.2.3
+* update gem 'mongoid-rspec' to 1.6.0
+* update gem 'zurb-foundation' to 3.2.5
+* update gem 'devise_invitable' to 1.1.5
+* update gem 'mongoid' to 3.0.19
+
+h3. 2.2.30 January 20, 2013
+
+* replace 'find_or_create_by_email' with 'create!' in 'db/seeds.rb' when using Mongoid
+* update gem 'mongoid' to 3.0.18
+* update gem 'capybara' to 2.0.2
+
+h3. 2.2.29 January 20, 2013
+
+* change the password used in examples from 'password' to 'changeme'
+
+h3. 2.2.28 January 20, 2013
+
+* Devise default minimum password length is now eight (Devise 2.2.0)
+* fix 'init' recipe for 'application.yml' to accommodate Devise default minimum password length of eight
+* fix 'testing' recipe for Fabrication to accommodate longer password default in Devise (contributed by Samson Ootoovak)
+* fix 'init' recipe to correct 'seeds.rb' error for Devise Confirmable option (contributed by Rémy Hannequin)
+* update gem 'minitest-spec-rails' to 4.3.6
+* update gem 'therubyracer' to 0.11.3
+* update gem 'devise' to 2.2.2
+* update gem 'zurb-foundation' to 3.2.4
+* update gem 'mongoid-rspec' to 1.5.6
+* update gem 'figaro' to 0.5.3
+* update gem 'rspec-rails' to 2.12.2
+
+h3. 2.2.27 December 24, 2012
+
+* accommodate html2haml bug with an ugly workaround (https://github.com/RailsApps/rails-composer/issues/55)
+
+h3. 2.2.26 December 22, 2012
+
+* update 'saas' recipe with rails-recurly-subscription-saas example app
+* option to specify gem's origin for gems specified in a defaults file (contributed by Michael Johnston)
+* update gem 'bootstrap-sass' to 2.2.2.0
+* update gem 'ruby_parser' to 3.1.1
+* update gem 'slim' to 1.3.5
+* update gem 'mongoid' to 3.0.15
+* update gem 'better_errors' to 0.3.2
+
+h3. 2.2.25 December 19, 2012
+
+* check for RVM before executing '.rvmrc' section of extras recipe (contributed by Errin Larsen)
+* update 'saas' recipe to add Rspec tests
+* use 'find_or_create_by_email' instead of 'find_or_create_by_name'
+* fix 'testing' recipe for Fabrication option
+
+h3. 2.2.24 December 16, 2012
+
+* use 'find_or_create_by_name' in the 'db/seeds.rb' file to avoid duplicate entries
+* refactor to set default user and roles from 'application.yml' file
+* add gem 'libv8' to accommodate gem 'therubyracer'
+
+h3. 2.2.23 December 14, 2012
+
+* use 'figaro' gem instead of 'local_env.yml' file to set local environment variables
+
+h3. 2.2.22 December 11, 2012
+
+* option to use 'local_env.yml' file to set local environment variables
+* fix 'extras' recipe to remove 'run rvm rvmrc trust'
+* update gem 'twitter-bootstrap-rails' to 2.1.8
+* update gem 'better_errors' to 0.2.0
+
+h3. 2.2.21 December 9, 2012
+
+* improve 'extras' recipe to add 'better_errors' option
+* update gem 'capybara' to 2.0.1
+* update 'saas' recipe to add Cucumber test
+
+h3. 2.2.20 December 7, 2012
+
+* revert 'Bundler.with_clean_env' (fix https://github.com/RailsApps/rails-composer/issues/54)
+
+h3. 2.2.19 December 7, 2012
+
+* fix issue #137: when a .railsrc file specifies a database gem, do not add it again
+* remove 'bundle update' (unnecessary) and add 'Bundler.with_clean_env do' to avoid gem clashes
+* add view helper 'display_base_errors' to accommodate SimpleForm
+* update 'saas' recipe to add Rspec and Cucumber tests
+* fix 'saas' recipe to add missing file for RSpec tests
+* update gem 'ruby_parser' to 3.1.0
+* update gem 'zurb-foundation' to 3.2.3
+* update gem 'devise_invitable' to 1.1.4
+* update gem 'therubyracer' to 0.11.0
+* update gem 'twitter-bootstrap-rails' to 2.1.7
+* update gem 'mongoid-rspec' to 1.5.5
+* update gem 'capybara' to 1.1.4
+* update gem 'mongoid' to 3.0.14
+
+h3. 2.2.18 November 8, 2012
+
+* fix 'gems' recipe to include 'database_cleaner' gem when RSpec is selected without Cucumber
+* fix 'gems' recipe to add the 'less-rails' gem to accommodate changes to the' twitter-bootstrap-rails' gem
+* fix 'views' recipe for 'admin_app' when 'simple_form' is not selected
+* fix 'init' recipe for 'admin_app' when 'mongoid' is selected
+* fix 'controllers' recipe so OmniAuth can be used with SQL databases as well as Mongoid
+* update gem 'mongoid' to 3.0.11
+* update gem 'capybara' to 1.1.3
+* update gem 'email_spec' to 1.4.0
+* update gem 'twitter-bootstrap-rails' to 2.1.6
+* update gem 'bootstrap-sass' to 2.1.1.0
+* update gem 'ruby_parser' to 3.0.1
+* update gem 'jquery-datatables-rails' to 1.11.2
+
+h3. 2.2.17 October 27, 2012
+
+* add '-t' flag to substitute local templates (contributed by Clinton N. Dreisbach)
+* add '-L' flag to clear the default recipes so only local recipes are available (contributed by Clinton N. Dreisbach)
+* fix 'testing' recipe when Fabrication is selected without Cucumber (contributed by Christopher Garvis)
+* update gem 'zurb-foundation' from 3.1.1 to 3.2.0
+* improve 'saas' recipe to add RSpec tests
+
+h3. 2.2.16 October 24, 2012
+
+* add 'saas' recipe for rails-stripe-membership-saas example app
+* update gem 'devise_invitable' from 1.0.3 to 1.1.1
+* update gem 'bootstrap-sass' from 2.1.0.0 to 2.1.0.1
+* update gem 'twitter-bootstrap-rails' from 2.1.3 to 2.1.4
+* update gem 'slim' from 1.3.2 to 1.3.3
+* update gem 'rspec-rails' from 2.11.0 to 2.11.4
+
+h3. 2.2.15 October 12, 2012
+
+* use appropriate specs and features when 'fabrication' is selected (contributed by Taylor Mock)
+
+h3. 2.2.14 October 11, 2012
+
+* fix errors for rails-prelaunch-signup app
+* minor change to prompt for 'drop any existing databases'
+* minor change to prompt for Slim
+* update gem 'mongoid' from 3.0.6 to 3.0.9
+* update gem 'simple_form' from 2.0.3 to 2.0.4
+* update gem 'database_cleaner' from 0.8.0 to 0.9.1
+
+h3. 2.2.13 October 10, 2012
+
+* add 'change roles' and 'delete user' features to admin app
+* improve 'views' recipes so Devise forms use SimpleForm when selected
+* improve 'railsapps' recipes to use 'quiet_assets'
+
+h3. 2.2.12 October 6, 2012
+
+* add MiniTest to testing options
+* add 'fabrication' gem to fixtures options (contributed by Taylor Mock)
+* improve 'extras' recipe to add 'quiet_assets' option
+
+h3. 2.2.11 October 5, 2012
+
+* add optional 'quiet' flag to suppress prompts (contributed by Michael Johnston)
+* remove grouped expression warning in ruby 1.9.3 (contributed by Michael Johnston)
+* improve 'extras' recipe to allow 'github' preference
+* use doublequotes instead of singles for 'git commit' to accommodate Windows (issue 123)
+* fix 'gems' recipe to properly rename PostgreSQL databases
+
+h3. 2.2.10 September 30, 2012
+
+* use 'git add -A' instead of 'git add .' (and use '-qm' instead of '-aqm' for git commit)
+* add 'email_spec' when RSpec is selected (even when email is 'none')
+* enhance 'gems' recipe to prompt for PostgreSQL or MySQL username and password
+* fix 'models' recipe to set provider in 'config/initializers/omniauth.rb' (rails-composer issue 19)
+* fix 'models' recipe for security fix for OmniAuth (contributed by Bradley Grzesiak)
+* fix 'gems' and 'setup' recipes to correct use of google_oauth3 provider for OmniAuth (issue 117)
+* fix 'extras' recipe to check for rvm gem version 1.11.3.5 or newer
+* update gem 'simple_form' from 2.0.2 to 2.0.3
+* update gem 'slim' from 1.3.0 to 1.3.2
+* update gem 'thin' from 1.4.1 to 1.5.0
+* update gem 'jquery-datatables-rails from 1.11.0 to 1.11.1
+* update gem 'zurb-foundation' from 3.0.9 to 3.1.1
+* update gem 'mongoid' from 3.0.5 to 3.0.6
+* update gem 'factory_girl_rails' from 4.0.0 to 4.1.0
+
+h3. 2.2.9 September 10, 2012
+
+* fix 'extras' recipe to improve error reporting when creating a project-specific rvm gemset
+
+h3. 2.2.8 September 7, 2012
+
+* run 'bundle update' before everything to avoid "already activated" gem issues
+* fix 'extras' recipe to resolve issues creating a project-specific rvm gemset
+* update gem 'haml-rails' from 0.3.4 to 0.3.5
+* update gem 'slim' from 1.2.2 to 1.3.0
+* update gem 'bootstrap-sass' from 2.0.4.0 to 2.1.0.0
+* update gem 'puma' from 1.6.2 to 1.6.3
+* update gem 'pg' from 0.14.0 to 0.14.1
+
+h3. 2.2.7 September 1, 2012
+
+* improve 'testing' recipe for better handling of RSpec 'spec/spec_helper.rb'
+
+h3. 2.2.6 August 30, 2012
+
+* fix 'prelaunch' recipe to correct application name in the routes.rb file
+
+h3. 2.2.5 August 29, 2012
+
+* fix 'frontend' recipe to remove application.css after twitter-bootstrap-rails creates it
+
+h3. 2.2.4 August 29, 2012
+
+* improve 'setup' recipe to save diagnostics before anything can fail
+* improve 'setup' recipe to not offer "Twitter Bootstrap (Less)" to Windows users
+* improve 'extras' recipe to only ask Linux users about adding 'therubyracer' gem
+* fix 'setup' recipe for error introduced in version 2.2.3
+* update gem 'puma' from 1.6.1 to 1.6.2
+
+h3. 2.2.3 August 27, 2012
+
+* fix 'setup', 'frontend', and 'controllers' recipes to allow CanCan authorization when OmniAuth authentication is selected
+
+h3. 2.2.2 August 26, 2012
+
+* fix 'prelaunch' recipe for missing Cucumber feature file
+* improve an error message when Mongoid is selected and a SQLite gem is present
+
+h3. 2.2.1 August 26, 2012
+
+* fix regression introduced by 1cf28c09cc4a8d11f2f1a7e5b91fce724d0a9b73 (version 2.1.10)
+
+h3. 2.2.0 August 26, 2012
+
+* merge 'auth' recipe into 'models' recipe
+* move 'form_builder' ingredient from 'extras' recipe to 'setup' recipe
+* add 'prelaunch' recipe for rails-prelaunch-signup example app
+
+h3. 2.1.10 August 25, 2012
+
+* update 'railsapps' recipe to allow choice of erb or Haml for all example apps
+* fix 'models', 'auth', and 'init' recipes to handle Devise confirmable module (contributed by Vitaly Kushner)
+* fix 'setup' recipe to exclude CanCan authorization when OmniAuth authentication is selected
+* update gem 'twitter-bootstrap-rails' from 2.1.1 to 2.1.3
+* update gem 'omniauth' from 1.1.0 to 1.1.1
+* update gem 'mongoid' from 3.0.4 to 3.0.5
+
+h3. 2.1.9 August 20, 2012
+
+* option to set '-T' or '-O' args in a default file (contributed by Michaël Witrant)
+
+h3. 2.1.8 August 18, 2012
+
+* add option to 'extras' recipe to create a GitHub repo
+* fix errors in recipes to implement 'subdomains_app'
+* fix 'gems' recipe to set database names for MySQL or PostgreSQL (contributed by Tom Scott)
+
+h3. 2.1.7 August 17, 2012
+
+* update 'gems' recipe to create MySQL database
+* update 'gems' and 'frontend' recipe to fix 'foundation'
+* update 'gems' so webserver gem is only installed once when production and dev are the same
+
+h3. 2.1.6 August 14, 2012
+
+* update 'gems' recipe to create PostgreSQL user and database
+* update 'gems' and 'frontend' recipes to use 'foundation' generator
+
+h3. 2.1.5 August 14, 2012
+
+* fix 'gems' recipe to modify database.yml except when 'mongoid' is selected
+* fix 'layout.erb' to enable git commits (contributed by tomykaira)
+
+h3. 2.1.4 August 13, 2012
+
+* renamed 'all' recipe as 'core' to select all core recipes
+* fix 'gems' recipe to modify database.yml as needed for 'postgresql' or 'mysql'
+
+h3. 2.1.3 August 13, 2012
+
+* added 'all' recipe as shortcut to selecting all recipes
+* changed name of 'database' recipe to 'init' to reduce confusion
+* new 'copy_from' method in helpers.erb
+* fix 'frontend' recipe for correct downloads of 'normalize' and 'skeleton'
+* fix 'extras' recipe to run after 'database' recipe for a final git commit
+* fix 'gems' recipe to remove 'sqlite3' from the Gemfile unless 'sqlite' is selected
+* fix 'readme' recipe to show if 'postgresql' or 'mysql' is selected
+* fix 'extras' recipe for more accurate error message when rvm can't switch gemsets
+
+h3. 2.1.2 August 12, 2012
+
+* move repository for source files from rails3-application-templates to rails-composer
+* fix 'auth' recipe to modify ability.rb file when CanCan authorization is selected
+* update gem 'haml' from 3.1.6 to 3.1.7
+* update gem 'puma' from 1.5.0 to 1.6.1
+
+h3. 2.1.1 August 11, 2012
+
+* add 'railsapps' recipe for example apps
+* add 'git' recipe (should precede any other recipe)
+* fixes to 'setup' and 'frontend' recipes (contributed by tomykaira)
+* fix syntax for alternative bundle path (contributed by tomykaira)
+* update gem 'mongoid' from 3.0.3 to 3.0.4
+
+h3. 2.1.0 August 10, 2012
+
+* use local recipes (contributed by tomykaira)
+* hidden preference for alternative bundle path (can be set in the defaults file)
+* fix 'models' recipe to only install rolify when authorization is selected
+* update gem 'zurb-foundation' from 3.0.5 to 3.0.8
+* update gem 'rolify' from 3.1.0 to 3.2.0
+* update gem 'launchy' from 2.1.0 to 2.1.2
+* update gem 'factory_girl_rails' from 3.5.0 to 4.0.0
+* update gem 'mongoid' from 3.0.1 to 3.0.3
+* update gem 'twitter-bootstrap-rails' from 2.0.3 to 2.1.1
+
+h3. 2.0.1 August 8, 2012
+
+* wrote a "Guide" to provide complete documentation
+* diagnostics module compares user's recipes and preferences to known working combinations
+* add a prefs{} hash for conditional configuration options (the 'quiz')
+* option to set 'quiz' preferences in a defaults file
+* add gems at a prompt or from a defaults file for a gems[] array
+* new 'copy_from_repo' method in helpers.erb
+* reduce inline code with more downloading of files from the example app repos on GitHub
+* conversion of ERB files to Haml or Slim with the 'copy_from_repo' method
+* remove recipes that are outdated or unsupported
+* reorganize recipes for easier maintenance
+* new recipe: 'example' as documentation
+* new recipe: 'setup' for conditional configuration options (the 'quiz')
+* new recipe: 'readme' to build README files that provide greater detail
+* new recipe: 'gems' collects all the gems in one recipe for easier updating
+* new recipe: 'testing' combines rspec and cucumber options with fixture replacements
+* new recipe: 'auth' combines devise, cancan and omniauth options
+* new recipe: 'email' consolidates email account options
+* new recipe: 'models' consolidates all models
+* new recipe: 'controllers' consolidates all controllers
+* new recipe: 'views' consolidates all views
+* new recipe: 'routes' consolidates all routes
+* new recipe: 'frontend' is the new name for the 'html5' recipe
+* new recipe: 'database' sets up the database seed and runs migrations
+* prompt to set -T or -O args (but not when generating application templates)
+* check if SQLite is present in the Gemfile and throw an error if MongoDB is selected
+* add 'rvm' option to 'extras' recipe to create a project-specific gemset and .rvmrc file
+* run 'bundle install --without production' in helpers.erb to avoid gems used only in production
+
+h3. 1.5.6 unreleased
+
+* update 'rspec' recipe to allow newer versions of gem 'mongoid-rspec'
+* update 'seed_database' to drop MongoDB database before seeding
+
+h3. 1.5.5 July 12, 2012
+
+* display an error message when a recipe cannot be found (contributed by Jim Riordan)
+* add 'turnip' recipe (contributed by Bradley Grzesiak)
+* update 'mongoid' 'omniauth' 'add_user' 'seed_database' recipes for Mongoid 3.0
+* update gem 'mongoid-rspec' from 1.4.5 to 1.4.6
+* update 'omniauth' recipe to add google-oauth3 support (contributed by Earl St Sauver)
+* update 'html5' recipe for newer Skeleton installation (contributed by Andrew J Vargo)
+* update gem 'zurb-foundation' from 3.0.2 to 3.0.5
+* update gem 'rspec-rails' from 2.10.1 to 2.11.0
+* fix .rvmrc file for rails_apps_composer
+
+h3. 1.5.4 July 3, 2012
+
+* add 'unicorn' recipe (contributed by Michel Pavan Macedo)
+* rollback gem 'mongoid-rspec' from 1.4.6 to 1.4.5 (contributed by Michel Pavan Macedo)
+* improve 'guard' recipe (contributed by Michel Pavan Macedo)
+* improve 'rspec' recipe to offer option of factory_girl or machinist (contributed by Michel Pavan Macedo)
+* improve 'rails_admin' recipe to mount engine (contributed by ngottlieb)
+* improve 'heroku' recipe (contributed by ngottlieb)
+* update gem 'compass-rails' from 1.0.2 to 1.0.3
+* update gem 'bootstrap-sass' from 2.0.3 to 2.0.4.0
+* update gem 'zurb-foundation' to 3.0.2
+* update gem 'turnip' to 1.1.0
+
+h3. 1.5.3 June 26, 2012
+
+* update 'prelaunch_signup' recipe with migration for 'opt-in' field
+* update gem 'factory_girl_rails' from 3.3.0 to 3.5.0
+* update gem 'cancan' from 1.6.7 to 1.6.8
+* update gem 'compass' from 0.12.1 to 0.12.2
+* update gem 'compass-rails' from 1.0.0 to 1.0.2
+* update gem 'devise' from 2.1.0 to 2.1.2
+* update gem 'mongoid-rspec' from 1.4.4 to 1.4.6
+
+h3. 1.5.2 June 10, 2012
+
+* add 'prelaunch_signup' recipe
+* fix 'seed_database' recipe to apply migration for devise_invitable
+* update 'devise' recipe to apply patch for problems with Rolify 3.1 and Mongoid
+* revert 'devise' recipe to remove 'rolify 3.2.0.beta4' with Mongoid
+
+h3. 1.5.1 June 8, 2012
+
+* update 'devise' recipe to use 'rolify 3.2.0.beta4' with Mongoid
+* update gem 'bson_ext' from 1.6.2 to 1.6.4
+* update gem 'mongoid' from 2.4.10 to 2.4.11
+* update gem 'devise_invitable' from 1.0.1 to 1.0.2
+* update gem 'database_cleaner' from 0.7.2 to 0.8.0
+* fix 'omniauth' and 'add_user' recipes to improve regex for gsub_file (contributed by Hosam Aly)
+
+h3. 1.5.0 May 21, 2012
+
+* New "defaults" option to specify recipes and preferences (contributed by Bryan Stearns)
+* revised README
+
+h3. 1.4.14 May 20, 2012
+
+* update 'add_user' recipe to rename folders used for Devise Haml views
+* minor update to 'action_mailer' recipe for "Mandrill by MailChimp" option
+
+h3. 1.4.13 May 19, 2012
+
+* update 'action_mailer' recipe to add "Mandrill by MailChimp" option
+
+h3. 1.4.12 May 17, 2012
+
+* update 'action_mailer' recipe to allow choice of sending email via SMTP, Gmail, or SendGrid accounts
+* update gem 'bootstrap-sass' from 2.0.1 to 2.0.3
+* remove 'add_user' patch for https://github.com/RailsApps/rails3-application-templates/issues/35
+* update gem 'haml' from 3.1.5 to 3.1.6
+* update gem 'devise' from 2.1.0.rc2 to 2.1.0
+
+h3. 1.4.11 May 13, 2012
+
+* fix 'add_user' recipe to add patch for https://github.com/RailsApps/rails3-application-templates/issues/35
+* update 'omniauth' recipe to add RSpec tests (contributed by Taylor Mock)
+* update gem 'mongoid' from 2.4.9 to 2.4.10
+* update gem 'factory_girl_rails' from 3.2.0 to 3.3.0
+
+h3. 1.4.10 May 11, 2012
+
+* fix 'subdomains' recipe to accommodate recent changes
+* fix 'omniauth_email' recipe to redirect if user's email is blank (contributed by Taylor Mock)
+
+h3. 1.4.9 May 11, 2012
+
+* add 'responders' recipe (contributed by allen13)
+* fix 'html5' recipe so Twitter Bootstrap icons will be available with 'bootstrap_sass' option
+* fix 'cucumber' recipe to add ':require => false' and avoid warning message
+* fix 'active_admin' recipe to correct typo for activeadmin-mongoid gem (contributed by Alex Kravets)
+* fix 'users_page' recipe to force it to run after 'add_user' recipe
+* fix 'add_user' recipe to remove a uniqueness constraint when Mongoid is used (contributed by nrser)
+* fix 'add_user' recipe to remove superfluous 'attr_accessible' comment
+* fix 'add_user' recipe to accommodate mongoid when Devise invitable module is used
+* update gem 'devise' from 2.1.0.rc to 2.1.0.rc2
+* update gem 'haml' from 3.1.4 to 3.1.5
+* update gem 'rspec-rails' from 2.9.0.rc2 to 2.10.1
+
+h3. 1.4.8 April 26, 2012
+
+* improve 'extras' recipe to offer to install gem 'therubyracer' for Linux users without node.js
+* fix 'html5' recipe to add gem 'therubyracer' for 'Bootstrap with Less' option
+
+h3. 1.4.7 April 25, 2012
+
+* improve 'html5' recipe to move flash messages into partials for application layouts
+* add 'paperclip' recipe with support for mongoid and cloudfiles (contributed by merlinvn)
+* add 'cloudfiles' recipe (contributed by merlinvn)
+* improve 'extras' recipe to support mongoid for will_paginate (contributed by merlinvn)
+* improve 'active_admin' recipe to support mongoid (contributed by merlinvn)
+* improve 'home_page' recipe to allow use of 'slim' recipe (contributed by Guten Ye)
+* improve 'omniauth' recipe to add Tumblr to the strategy list (contributed by monfresh)
+* correct error when using Cucumber and Capybara recipes together (contributed by Alan Oliver)
+* update gem 'mongoid' from 2.4.8 to 2.4.9
+* update gem 'factory_girl_rails' from 3.1.0 to 3.2.0
+* update gem 'rails-backbone' from 0.7.1 to 0.7.2
+* update gem 'omniauth' from 1.0.3 to 1.1.0
+
+h3. 1.4.6 April 11, 2012
+
+* resolve versioning issues
+
+h3. 1.4.5 April 11, 2012
+
+* add option for authorization with CanCan and Rolify
+* add 'will-paginate' option to 'extras' recipe
+* update gem 'mongoid' from 2.4.7 to 2.4.8
+
+h3. 1.4.4 April 3, 2012
+
+* update gem 'factory_girl_rails' from 3.0.0 to 3.1.0
+* update gem 'bson_ext' from 1.6.1 to 1.6.2
+* update 'devise' recipe to use Devise 2.1.0.rc when devise_invitable is selected
+* tweak 'simple_form' recipe
+
+h3. 1.4.3 April 3, 2012
+
+* update 'add_user' and 'omniauth' recipes to fix problem generating rails3-mongoid-omniauth example
+* add 'redis' recipe (contributed by Julián Porta)
+* add 'resque' recipe (contributed by Julián Porta)
+
+h3. 1.4.2 April 2, 2012
+
+* add 'compass_960' recipe (contributed by Julián Porta)
+* update 'compass' recipe (contributed by Julián Porta)
+
+h3. 1.4.1 April 2, 2012
+
+* add 'datamapper' recipe (contributed by Peter Fern)
+* rename 'hoptoad' recipe to 'airbrake' and update (contributed by Peter Fern)
+* update 'extras' recipe to run 'rails-footnotes' generator when selected (contributed by Peter Fern)
+* update 'devise' recipe to use Devise 2.0.4 when devise_invitable is selected (pending fix to devise_invitable)
+* update 'add_user' recipe to support Devise 'confirmable' option for mongoid
+* update 'seed_database' recipe to support mongoid with 'Time.now.utc' instead of 'DateTime.now'
+* update gem 'rails-backbone' from 0.7.0 to 0.7.1
+* update gem 'factory_girl_rails' from 2.0.0.rc to 3.0.0
+* update gem 'mongoid' from 2.4.6 to 2.4.7
+* update gem 'database_cleaner' from 0.7.1 to 0.7.2
+* update gem 'launchy' from 2.0.5 to 2.1.0
+
+h3. 1.4.0 April 2, 2012
+
+* added template command (no longer using 'rake print') (contributed by Keenan Brock)
+
+h3. 1.3.1 March 15, 2012
+
+* update 'devise' recipe to remove deprecated use of FactoryGirl
+
+h3. 1.3.0 March 15, 2012
+
+* implement and enable support for 'run_after' parameter (contributed by Rico Sta. Cruz)
+* update 'omniauth' recipe to add 'omniauth-google' gem (contributed by Rico Sta. Cruz)
+* update 'compass' recipe to add 'compass-rails' gem (contributed by Rico Sta. Cruz)
+* update gem 'compass' from 0.12.rc.1 to 0.12.1 (contributed by Rico Sta. Cruz)
+* fix 'rspec' recipe to add 'factory_girl_rails' to development group (Philippe Van Eerdenbrugghe)
+* add 'active_admin' recipe (contributed by Philippe Van Eerdenbrugghe)
+* update gem 'omniauth' from 1.0.2 to 1.0.3
+* update gem 'bson_ext' from 1.5.2 to 1.6.1
+* update gem 'factory_girl_rails' from 1.7.0 to 2.0.0.rc
+* update gem 'rspec-rails' from 2.8.1 to 2.9.0.rc2
+* update gem 'devise' from 2.0.4 to 2.1.0.rc
+
+h3. 1.2.1 March 11, 2012
+
+* fix 'backbone' recipe
+
+h3. 1.2.0 March 7, 2012
+
+* remove 'navigation' recipe (consolidated with 'html5' recipe)
+
+h3. 1.1.8 March 5, 2012
+
+* improve 'html5' recipe to download files for complex application layout and css for Twitter Bootstrap
+* update gem 'mongoid' from 2.4.4 to 2.4.6
+
+h3. 1.1.7 March 4, 2012
+
+* improve 'home_page' recipe to show how to set a home page for Devise authenticated users
+* improve 'devise' recipe for Devise 'confirmable' option
+* improve 'cleanup' recipe to remove commented lines from config/routes.rb
+* improve 'html5' recipe to allow choice of bootstrap_less or bootstrap_sass (contributed by gmgp)
+* remove 'css_setup' recipe (consolidated with 'html5' recipe)
+* add 'inherited_resources' recipe (contributed by gmgp)
+* add 'simple_form' recipe (contributed by gmgp)
+
+h3. 1.1.6 February 28, 2012
+
+* update 'devise' recipe to accommmodate RSpec and Cucumber for Devise 'confirmable' option
+
+h3. 1.1.5 February 26, 2012
+
+* update 'action_mailer' recipe to configure test environment
+* update 'action_mailer' recipe to configure ActionMailer to send email using a GMail account
+* update 'devise' recipe with 'confirmable' and 'invitable' options (with a Cucumber scenario)
+* change prompt for 'guard' recipe
+* update 'seed_database' recipe to add 'rake db:test:prepare'
+* remove 'add_user_name' recipe (replaced by 'add_user' recipe)
+* update 'cucumber' recipe to run single features without adding "--require features" to the command line
+* add 'slim' recipe (contributed by claudiob)
+
+h3. 1.1.4 February 21, 2012
+
+* add a 'bundle update' after 'bundle install'
+* fix 'email_spec' configuration in 'rspec' recipe
+* fix typo for machinist in 'rspec' recipe
+* avoid deprecation warning with Devise 2.0 for old 'devise/shared/_links.erb' partial
+
+h3. 1.1.3 February 21, 2012
+
+* add 'email_spec' gem to 'rspec' recipe
+* update gem 'cucumber-rails' from 1.2.1 to 1.3.0
+* update gem 'factory_girl_rails' from 1.6.0 to 1.7.0
+* update gem 'devise' from 2.0.0 to 2.0.4
+* update gem 'mongoid' from 2.4.3 to 2.4.4
+* update gem 'bson_ext' from 1.3.1 to 1.5.2
+* update gem 'rails-backbone' from 0.6.1 to 0.7.0
+* update gem 'compass' from 0.12.alpha.4 to 0.12.rc.1
+* update gem 'bootstrap-sass' from 2.0.0 to 2.0.1
+* fix typo for machinist in 'rspec' recipe
+
+h3. 1.1.2 February 12, 2012
+
+* fix Twitter Bootstrap in the 'html5' recipe
+* warn that 'rails-footnotes' is SLOW in the 'extras' recipe
+
+h3. 1.1.1 February 4, 2012
+
+* bugfix in 'rspec' recipe: call machinist:install generator
+* require 'rake' in the gemspec file to avoid 'could not find rake' failures
+
+h3. 1.1.0 January 28, 2012
+
+* remove support for Rails 3.0 (require Rails 3.1 or newer)
+* remove 'application_layout' recipe (use html5 recipe instead)
+* remove 'jquery' recipe (jQuery installed by default for Rails 3.1)
+* remove 'draggable' recipe (not maintained)
+* remove 'env_yaml' recipe (not maintained)
+* remove 'jammit' recipe (not maintained)
+* remove 'mongo_mapper' recipe (not maintained)
+* remove 'mootools' recipe (not maintained)
+* remove 'pow' recipe (not maintained)
+* remove 'prototype' recipe (not maintained)
+* remove 'redis' recipe (not maintained)
+* remove 'redistogo' recipe (not maintained)
+* remove 'rightjs' recipe (not maintained)
+* remove 'sequel' recipe (not maintained)
+* remove 'slim' recipe (not maintained)
+* remove 'test_unit' recipe (not maintained)
+* incorporate 'ban_spiders' recipe in 'extras' recipe
+* update gem 'rails-backbone' from 0.5.3 to 0.6.1
+* update gem 'compass' from 0.12.alpha.0 to 0.12.alpha.4
+* update gem 'cucumber-rails' from 1.2.0 to 1.2.1
+* update gem 'database_cleaner' from 0.7.0 to 0.7.1
+* update gem 'devise' from 1.5.0 to 2.0.0
+* update gem 'haml' from 3.1.2 to 3.1.4
+* update gem 'mongoid' from 2.3.3 to 2.4.3
+* update gem 'omniauth' from 1.0.0 to 1.0.2
+* update gem 'rspec-rails' from 2.8.0.rc1 to 2.8.1
+* update gem 'factory_girl_rails' from 1.4.0 to 1.6.0
+* update gem 'sass' from 3.1.6 to 3.1.12
+* bugfix in 'omniauth' recipe: eliminate 'other' as a provider choice
+* add MongoLab recipe based on MongoHQ recipe (contributed by Leo Lou)
+
+h3. 1.0.28 unreleased
+
+* remove code that adds a Javascript runtime to the Gemfile for Linux users
+* 'compass' recipe => fix typo (TMorgan99)
+* 'guard' recipe => gets missing newline in Gemfile.append for case OS (TMorgan99)
+* 'heroku' recipe => declares gem 'heroku' (TMorgan99)
+* 'rspec' recipe => adds support for machinist (TMorgan99)
+
+h3. 1.0.27 unreleased
+
+* switch from 'twitter-bootstrap-rails' to 'bootstrap-sass'
+* 'application.css' renamed as 'application.css.scss'
+* update gem 'factory_girl_rails' from 1.3.0 to 1.4.0
+
+h3. 1.0.26 November 17, 2011
+
+* improve logic for displaying navigation in subdomains recipe
+* update gem 'capybara' from 1.1.1 to 1.1.2
+
+h3. 1.0.25 November 14, 2011
+
+* add 'subdomains' recipe
+* modify layout.erb to autoload modules/classes from the lib directory
+* update gem 'devise' from 1.4.9 to 1.5.0
+* update gem 'database_cleaner' from 0.6.7 to 0.7.0
+
+h3. 1.0.24 November 8, 2011
+
+* update gem 'omniauth' from 0.3.2 to 1.0.0 (and update recipe)
+* use mongoid 2.3.3 (works with bson_ext 1.3.1)
+* update gem 'cucumber-rails' from 1.1.1 to 1.2.0
+* update gem 'rspec-rails' from 2.7.0 to 2.8.0.rc1
+
+h3. 1.0.23 October 28, 2011
+
+* mongoid 2.3.2 depends on bson_ext > 1.4, use mongoid 2.2.3 with bson_ext 1.3.1
+
+h3. 1.0.22 October 28, 2011
+
+* gem 'bson_ext' rolled back from 1.4.1 to 1.3.1 because of performance issues
+
+h3. 1.0.21 October 27, 2011
+
+* drop HTML5 Boilerplate from the html5 recipe
+* add Zurb Foundation framework to html5 recipe
+* add Twitter Bootstrap framework to html5 recipe
+* use RbConfig instead of Config to avoid deprecation warning in Ruby 1.9.3
+* update gem 'bson_ext' from 1.4.0 to 1.4.1
+* update gem 'mongoid' from 2.3.0 to 2.3.2
+* update gem 'devise' from 1.4.7 to 1.4.9
+* update gem 'factory_girl_rails' from 1.2.0 to 1.3.0
+* update gem 'rspec-rails' from 2.6.1 to 2.7.0
+* update gem 'omniauth' from 0.3.0 to 0.3.2
+
+h3. 1.0.20 October 7, 2011
+
+* update gem 'cucumber-rails' from 1.0.2 to 1.1.1
+* update gem 'bson_ext' from 1.3.1 to 1.4.0
+* update gem 'mongoid' from 2.2.0 to 2.3.0
+* update gem 'devise' from 1.4.5 to 1.4.7
+* update gem 'omniauth' from 0.3.0.rc3 to 0.3.0
+
+h3. 1.0.19 September 9, 2011
+
+* fixed pesky HAML indent in 'navigation' recipe
+
+h3. 1.0.18 September 9, 2011
+
+* remove 'devise_navigation' recipe and merge with 'navigation' recipe
+* update gem 'capybara' from 1.1.0 to 1.1.1
+* update gem 'devise' from 1.4.4 to 1.4.5
+* update gem 'omniauth' from 0.2.6 to 0.3.0.rc3
+* fix indentation of 'body' tag in 'html5' recipe
+* add recipe for Guard (contributed by Ashley Woodard)
+* remove explicit dependency on sass gem for Rails 3.1 projects (contributed by Ashley Woodard)
+
+h3. 1.0.17 September 2, 2011
+
+* update gem 'factory_girl_rails' from 1.1.0 to 1.2.0
+* update gem 'capybara' 1.0.1 to 1.1.0
+* for 'omniauth' recipe, use OmniAuth from GitHub to avoid gem compatibility issues
+* add recipe for Compass (contributed by Ashley Woodard)
+* add recipe for Backbone.js (contributed by Ashley Woodard)
+* use 'mysql2 ~> 0.2' for Rails 3.0 projects (contributed by Ashley Woodard)
+* add ":method=>'delete'" to 'Logout' link for devise_navigation recipe
+
+h3. 1.0.16 August 31, 2011
+
+* update gem 'devise' from 1.4.2 to 1.4.4
+* update gem 'mongoid' from 2.1.9 to 2.2.0
+* improve fix for Devise/Cucumber issue https://github.com/RailsApps/rails3-devise-rspec-cucumber/issues/3
+
+h3. 1.0.15 August 24, 2011
+
+* update gem 'mongoid' from 2.1.5 to 2.1.9
+* update gem 'capybara' 1.0.0 to 1.0.1
+* update HTML5 boilerplate recipe Javascript urls for Skeleton, changed app.js to tabs.js
+
+h3. 1.0.14 August 5, 2011
+
+* add christopherhein's frontend-helpers gem to HTML5 recipe
+* set scope for CSS stylesheets using body tag in HTML5 recipe
+
+h3. 1.0.13 August 5, 2011
+
+* update gem 'mongoid' from 2.0.2 to 2.1.5
+* update gem 'factory_girl_rails' from 1.1.rc1 to 1.1.0
+* update gem 'launchy' from 0.4.0 to 2.0.5
+* update HTML5 boilerplate recipe with changed Javascript urls
+
+h3. 1.0.12 July 9, 2011
+
+* update gem 'factory_girl_rails' from 1.1.beta3 to 1.1.rc1
+* update gem 'devise' from 1.4.0 to 1.4.2
+* fix for Devise/Cucumber issue https://github.com/RailsApps/rails3-devise-rspec-cucumber/issues/3
+
+h3. 1.0.11 June 29, 2011
+
+* add 'Skeleton Boilerplate' (getskeleton.com) option to 'html5' recipe
+* update gem 'cucumber-rails' from 1.0.0 to 1.0.2
+* update gem 'factory_girl_rails' from 1.1.beta1 to 1.1.beta3
+* update gem 'devise' from 1.3.4 to 1.4.0
+* fix 'navigation' recipe to accommodate HTML5
+
+h3. 1.0.10 June 21, 2011
+
+* add 'extras' recipe
+* add 'rails-footnotes' to 'extras' recipe
+* update gem 'cucumber-rails' from 0.5.2 to 1.0.0
+
+h3. 1.0.9 June 20, 2011
+
+* rename 'boilerplate' recipe to 'html5'
+* add option to normalize css as alternative to full CSS reset
+* correct location for HTML5 Boilerplate site root assets
+
+h3. 1.0.8 June 19, 2011
+
+* tweak CSS and layout for HTML5 Boilerplate
+
+h3. 1.0.7 June 18, 2011
+
+* add HTML5 Boilerplate recipe
+* update gem 'capybara' 1.0.0.rc1 to 1.0.0
+
+h3. 1.0.6 June 8, 2011
+
+* fix to avoid the error "You have already activated rake..."
+* for Rails 3.1, install a gem for a Javascript runtime for Linux users
+* update gems for Rails 3.1: haml 3.1.2, cucumber-rails 0.5.2, capybara 1.0.0.rc1
+* minor change to URLs for downloading 'raw' files from GitHub
+
+h3. 1.0.5 May 27, 2011
+
+* adjust Javascript and stylesheet link tags for Rails 3.1
+* adjust CSS stylesheets location for Rails 3.1
+* use HTML 5 for Haml
+* fix indentation in devise_navigation recipe for Haml
+* update gems for Rails 3.0.8 and 3.1: cucumber-rails 0.5.1, capybara 1.0.0.beta1, rspec 2.6.1
+* remove "fix_rake" recipe, was needed for Rails 3.0.7, not needed for Rails 3.0.8
+
+h3. 1.0.4 May 24, 2011
+
+* for Rails 3.0, use only gem versions that we know work
+* for Rails 3.1+, use optimistic versioning for gems
+* add "fix_rake" recipe for Rails 3.0 that binds the rake gem at version 0.8.7
+
+h3. 1.0.3 May 19, 2011
+
+* new gem versions: devise, bson_ext, rspec-rails, cucumber-rails, capybara
+* bugfix for jquery recipe
+* exception handling if RSpec or Cucumber example files are unobtainable
+
+h3. 1.0.0 May 17, 2011
+
+* rename project from rails3_devise_wizard to rails_apps_composer and move to new repo at "http://github.com/RailsApps/":http://github.com/RailsApps/
+
+h3. 0.3.2 May 17, 2011
+
+* omniauth recipe no longer requires add_user recipe
+* fixed a syntax error in the omniauth recipe
+
+h3. 0.3.1 May 13, 2011
+
+* accommodate Rails 3.1 and change the jquery recipe
+* modify recipes to compose the rails3-devise-rspec-cucumber example app
+
+h3. 0.2.8 May 5, 2011
+
+* add recipes needed for the rails3-mongoid-omniauth example app
+* update various recipes with newer gem versions
+
+h3. 0.2.5 April 18, 2011
+
+* app template will confirm preferences before running recipes (allows creation of a single master installation script)
+* add recipes needed for the rails3-mongoid-devise example app
+* changes to many recipes (different from RailsWizard)
+* execution order dependent on list of recipes, not "run_after" and "run_before" configuration flags (different from RailsWizard)
+
+h3. 0.2.0 April 15, 2011
+
+* original version named rails3_devise_wizard and based on "Michael Bleigh's RailsWizard gem":https://github.com/intridea/rails_wizard version 0.1.4
+
+h3. 0.1.4 April 7, 2011
+
+* Michael Bleigh's RailsWizard gem
